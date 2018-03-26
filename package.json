@@ -6,8 +6,7 @@
     "author": "Silver Connection",
     "license": "MIT",
     "keywords": [
-        "transaction",
-        "ajax",
+        "component",
         "vue"
     ],
     "main": "dist/vue-components.cjs.js",
