@@ -3,10 +3,12 @@
     "target": "es5",
     "module": "es2015",
     "lib": [
-      "dom",
-      "es5",
-      "es2015.promise",
-      "es2015.iterable"
+        "dom",
+        "es5",
+        "es2017",
+        "es2015.core",
+        "es2015.promise",
+        "es2015.iterable"
     ],
     "strict": true,
     "moduleResolution": "node",
@@ -16,11 +18,9 @@
     "sourceMap": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": [
-        "src/*",
-      ]
+      "@/*": ["src/*"]
     },
-    "declaration": false,
+    "declaration": false
   },
   "include": [
     "src/**/*.ts",

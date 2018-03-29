@@ -1,4 +1,5 @@
 import pkg from "./package.json";
+import tsconfig from "./tsconfig.json";
 import vue from "rollup-plugin-vue";
 
 // import buble from 'rollup-plugin-buble'
@@ -16,11 +17,15 @@ import uglify from "rollup-plugin-uglify";
 import livereload from "rollup-plugin-livereload";
 import serve from "rollup-plugin-serve";
 
+//
+// Configs
+//
 const plugins = [
     vue({
         css: pkg.browser + ".css",
         disableCssModuleStaticReplacement: false,
-        compileTemplate: true
+        compileTemplate: true,
+        typescript: tsconfig
     }),
     // buble({ exclude: 'node_modules/**' }),
     // babel({
