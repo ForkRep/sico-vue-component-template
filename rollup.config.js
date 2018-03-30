@@ -1,5 +1,6 @@
 import pkg from "./package.json";
 import tsconfig from "./tsconfig.json";
+import typescript from "rollup-plugin-typescript2";
 import vue from "rollup-plugin-vue";
 
 // import buble from 'rollup-plugin-buble'
@@ -21,6 +22,13 @@ import serve from "rollup-plugin-serve";
 // Configs
 //
 const plugins = [
+    typescript({
+		tsconfigOverride: {
+			compilerOptions: {
+				declaration: false,
+			}
+		}
+	}),
     vue({
         css: pkg.browser + ".css",
         disableCssModuleStaticReplacement: false,

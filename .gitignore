@@ -116,6 +116,8 @@ tscommand*tmp*
 .tmp/*
 tmp
 tmp/*
+.rpt2_cache
+.rpt2_cache/*
 src/**/*.js
 src/**/*.css
 src/**/*.map

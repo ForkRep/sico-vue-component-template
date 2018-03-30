@@ -11,7 +11,7 @@
       props: {
           name: {
               type: String,
-              "default": "default value"
+              default: "default value"
           },
           initialEnthusiasm: {
               type: Number
@@ -40,10 +40,8 @@
   });
 
   // import HelloDecoratorComponent from "./components/helloDecorator.vue";
-
   var main = {
       HelloComponent: HelloComponent,
-      // HelloDecoratorComponent: HelloDecoratorComponent
   };
 
   return main;
